@@ -6,7 +6,7 @@
 /*   By: OelitokO <omerelitok.05@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 06:46:00 by OelitokO          #+#    #+#             */
-/*   Updated: 2025/06/03 08:20:55 by OelitokO         ###   ########.fr       */
+/*   Updated: 2025/06/23 19:25:35 by OelitokO         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s3)
 		return (NULL);
 	ft_memcpy (s3, s1 + start, len);
+	s3[len] = '\0';
 	return (s3);
 }
